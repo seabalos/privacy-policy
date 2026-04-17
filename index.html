@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for [YOUR APP NAME]">
+    <title>Privacy Policy - [YOUR APP NAME]</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1f4e78;
+            --secondary-color: #2e75b6;
+            --accent-color: #4472c4;
+            --text-dark: #1a1a1a;
+            --text-light: #4a4a4a;
+            --bg-light: #f8f9fa;
+            --border-color: #e0e0e0;
+            --success-color: #28a745;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .last-updated {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Introduction */
+        .intro {
+            background-color: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--secondary-color);
+            line-height: 1.8;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background-color: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin: 0.5rem 0;
+        }
+
+        .toc a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin: 1.5rem 0 0.8rem 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Lists */
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 0.7rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        li strong {
+            color: var(--text-dark);
+        }
+
+        /* Contact Box */
+        .contact-box {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .contact-item {
+            margin: 1rem 0;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            display: inline-block;
+            min-width: 140px;
+        }
+
+        .contact-value {
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        /* Highlights */
+        .highlight {
+            background-color: #fffacd;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+        }
+
+        /* Links */
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 1.5rem 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            .contact-label {
+                display: block;
+                min-width: auto;
+                margin-bottom: 0.2rem;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            header {
+                background: white;
+                color: var(--primary-color);
+                border-bottom: 2px solid var(--primary-color);
+            }
+
+            a {
+                color: var(--secondary-color);
+                text-decoration: underline;
+            }
+
+            .toc {
+                page-break-after: always;
+            }
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: April 2026</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <p>
+                This Privacy Policy ("Policy") explains how <strong>[YOUR APP NAME]</strong> ("App", "we", "us", or "our") collects, uses, discloses, and otherwise processes personal information in connection with our services. This Policy applies to all users of the App, whether accessed through Apple App Store, Garmin Connect, or any other distribution platform.
+            </p>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-1">1. Information We Collect</a></li>
+                <li><a href="#section-2">2. How We Use Your Information</a></li>
+                <li><a href="#section-3">3. Data Sharing and Third Parties</a></li>
+                <li><a href="#section-4">4. Data Retention</a></li>
+                <li><a href="#section-5">5. Your Privacy Rights and Choices</a></li>
+                <li><a href="#section-6">6. Data Security</a></li>
+                <li><a href="#section-7">7. Children's Privacy</a></li>
+                <li><a href="#section-8">8. International Data Transfers</a></li>
+                <li><a href="#section-9">9. California Privacy Rights (CCPA/CPRA)</a></li>
+                <li><a href="#section-10">10. GDPR Rights (EU Users)</a></li>
+                <li><a href="#section-11">11. Apple App Store Specific Disclosures</a></li>
+                <li><a href="#section-12">12. Garmin Integration and Data Transfer</a></li>
+                <li><a href="#section-13">13. Do Not Track</a></li>
+                <li><a href="#section-14">14. Changes to This Privacy Policy</a></li>
+                <li><a href="#section-16">16. Activity Analysis and Performance Insights</a></li>
+                <li><a href="#section-17">17. Community Features and Public Sharing</a></li>
+                <li><a href="#section-15">18. Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 1 -->
+        <section id="section-1">
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Information You Provide Directly</h3>
+            <ul>
+                <li>Account information: name, email address, password (encrypted)</li>
+                <li>Profile data: age, gender, fitness goals, health metrics</li>
+                <li>Device information: device type, model, operating system version</li>
+                <li>Communication: if you contact us, we may keep records of your inquiries and responses</li>
+            </ul>
+
+            <h3>1.2 Health and Fitness Data (Garmin Integration)</h3>
+            <p>
+                When you connect your Garmin account or device to our App, we collect activity and health data from your Garmin account. This data is obtained directly through your authorization and includes:
+            </p>
+            <ul>
+                <li><strong>Activity data:</strong> steps, distance, calories burned, duration, date, time, activity type, training load, training effect</li>
+                <li><strong>Health metrics:</strong> heart rate (average, maximum, and variability), sleep data (duration, stages, quality), stress levels, body metrics (weight, body fat percentage)</li>
+                <li><strong>Performance metrics:</strong> pace, speed, power output, cadence, elevation gain, VO2 max, estimated workload, personal records</li>
+                <li><strong>Training data:</strong> structured workouts, training plans, goals, fitness trends, training status</li>
+                <li><strong>Location data:</strong> GPS coordinates and route information (only from activities you recorded with location enabled on your Garmin device)</li>
+                <li><strong>Device information:</strong> Garmin device type, device serial number, device name, software version</li>
+            </ul>
+            <p>
+                <strong>Important regarding health data:</strong> We do not sell, trade, or use your health and fitness data for advertising, marketing, or any purpose unrelated to improving your experience with our App. We do not share this data with third parties for commercial purposes without your explicit consent.
+            </p>
+
+            <h3>1.3 Automatically Collected Information</h3>
+            <ul>
+                <li>Device identifiers: unique device ID, advertising ID</li>
+                <li>Usage data: features accessed, app interactions, crash logs</li>
+                <li>Analytics: analytics tools to understand app performance and user behavior</li>
+                <li>IP address and network information</li>
+            </ul>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="section-2">
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>To provide and improve the App and its services, including syncing and displaying your Garmin data</li>
+                <li>To analyze your fitness and health performance, generate insights, and track progress</li>
+                <li>To provide personalized recommendations (training suggestions, activity insights, performance analytics)</li>
+                <li>To enable you to view, manage, and interact with your activity history and health metrics</li>
+                <li>To detect and prevent fraud, abuse, or unauthorized access to your account</li>
+                <li>To respond to your inquiries and provide customer support</li>
+                <li>To send service announcements, updates, and optional promotional materials (with your consent)</li>
+                <li>To comply with legal obligations and enforce our Terms of Service</li>
+                <li>For research and analytics to understand usage patterns and improve our services (using de-identified or aggregated data)</li>
+            </ul>
+
+            <h3>2.1 AI and Machine Learning</h3>
+            <p>
+                We may use artificial intelligence and machine learning technologies to improve the services we provide to you. This includes:
+            </p>
+            <ul>
+                <li>Generating personalized training recommendations based on your activity history and fitness level</li>
+                <li>Analyzing your performance trends to identify improvement opportunities</li>
+                <li>Detecting unusual patterns or potential health concerns in your data</li>
+                <li>Creating predictive analytics for your fitness goals</li>
+                <li>Improving our App's features, performance, and user experience</li>
+            </ul>
+            <p>
+                We primarily use de-identified and aggregated data for developing and improving our AI models. When we use your personal health or activity data for AI purposes, we do so only with your consent and in accordance with this Privacy Policy. You can manage your preferences for how your data is used in our AI features through your account settings.
+            </p>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="section-3">
+            <h2>3. Data Sharing and Third Parties</h2>
+            <p>
+                We do not sell your personal information. However, we may share information with:
+            </p>
+
+            <h3>Third-Party Partners</h3>
+            <ul>
+                <li><strong>Garmin:</strong> When you connect your account to Garmin Connect, your App data is shared with Garmin. This includes activity data, health metrics, and training information. Garmin processes this data according to their privacy policy: <a href="https://www.garmin.com/privacy/connect" target="_blank">https://www.garmin.com/privacy/connect</a></li>
+                <li><strong>Service providers:</strong> Third-party vendors who help us host data, provide analytics, send emails, and deliver services on our behalf</li>
+                <li><strong>Legal compliance:</strong> When required by law, court order, or government request</li>
+                <li><strong>Business transfers:</strong> In case of merger, acquisition, or sale of assets</li>
+            </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="section-4">
+            <h2>4. Data Retention</h2>
+            <p>
+                We retain your personal information for as long as your account is active or as needed to provide services. The retention period depends on the type of data:
+            </p>
+            <ul>
+                <li><strong>Account information:</strong> Retained while your account is active. Upon account deletion, deleted within 30 days.</li>
+                <li><strong>Activity and health data:</strong> Retained while your account is active and your Garmin integration is connected. If you disconnect Garmin integration, we will retain the previously synchronized data as part of your App history unless you request deletion.</li>
+                <li><strong>Backup and system logs:</strong> Retained for up to 60 days after deletion for backup and security purposes.</li>
+                <li><strong>Analytics and aggregated data:</strong> Retained indefinitely as it is de-identified and cannot be linked to you.</li>
+            </ul>
+            <p>
+                When you delete your account, we will delete or anonymize your personal data within 30 days, except where retention is required by law. However, please note:
+            </p>
+            <ul>
+                <li>Any data you shared publicly or with other users may remain visible</li>
+                <li>Your Garmin account and its data will only be affected if you disconnect the integration</li>
+                <li>Garmin's own data retention policies apply to your Garmin account; contact Garmin directly for more information about deleting data from their servers</li>
+            </ul>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="section-5">
+            <h2>5. Your Privacy Rights and Choices</h2>
+
+            <h3>5.1 Access and Portability</h3>
+            <p>
+                You have the right to request a copy of the personal information we hold about you. Contact us at <strong>[YOUR EMAIL]</strong> with the subject line "Data Access Request".
+            </p>
+
+            <h3>5.2 Deletion Request</h3>
+            <p>
+                You can request deletion of your account and associated data by sending a request to <strong>[YOUR EMAIL]</strong> with the subject line "Account Deletion Request". Note that you may lose access to all App features upon deletion.
+            </p>
+
+            <h3>5.3 Withdraw Consent</h3>
+            <p>
+                You can withdraw consent for Garmin Connect integration through the App settings. This will disconnect your Garmin account and stop data synchronization. To revoke consent at the Garmin level, visit your Garmin Connect account permissions settings.
+            </p>
+
+            <h3>5.4 Opt-Out of Communications</h3>
+            <p>
+                You can opt out of promotional emails by clicking "unsubscribe" in the email or adjusting notification settings in the App.
+            </p>
+
+            <h3>5.5 Location Data</h3>
+            <p>
+                You can enable or disable location services through your device settings. We collect precise location data only when you explicitly grant permission.
+            </p>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="section-6">
+            <h2>6. Data Security</h2>
+            <p>
+                We implement industry-standard security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These include encryption of data in transit (SSL/TLS) and at rest, secure authentication mechanisms, and regular security audits. However, no method of transmission over the internet is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.
+            </p>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="section-7">
+            <h2>7. Children's Privacy</h2>
+            <p>
+                The App is not intended for children under 13 (or the applicable age of digital consent in your jurisdiction). We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal information, we will delete such information promptly. For child-directed apps, we comply with COPPA and other applicable children's privacy laws.
+            </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="section-8">
+            <h2>8. International Data Transfers</h2>
+            <p>
+                Your information may be transferred to, stored in, and processed in countries other than your country of residence. These countries may not have data protection laws equivalent to those in your home country. By using the App, you consent to such transfers. If you are located in the EU, we will implement appropriate safeguards such as Standard Contractual Clauses.
+            </p>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="section-9">
+            <h2>9. California Privacy Rights (CCPA/CPRA)</h2>
+            <p>If you are a California resident, you have the following rights:</p>
+            <ul>
+                <li><strong>Right to know:</strong> request what personal information we collect</li>
+                <li><strong>Right to delete:</strong> request deletion of personal information</li>
+                <li><strong>Right to opt-out:</strong> opt out of the sale or sharing of personal information</li>
+                <li><strong>Right to correction:</strong> request correction of inaccurate information</li>
+                <li><strong>Right to non-discrimination:</strong> we will not discriminate against you for exercising your rights</li>
+            </ul>
+            <p>To exercise these rights, contact us at <strong>[YOUR EMAIL]</strong>. We will respond within 45 days.</p>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="section-10">
+            <h2>10. GDPR Rights (EU Users)</h2>
+            <p>If you are located in the European Union, you have the following rights under GDPR:</p>
+            <ul>
+                <li><strong>Right of access:</strong> obtain confirmation of processing and access to your data</li>
+                <li><strong>Right to rectification:</strong> correct inaccurate or incomplete data</li>
+                <li><strong>Right to erasure:</strong> request deletion of your data ('right to be forgotten')</li>
+                <li><strong>Right to restrict processing:</strong> limit how we use your data</li>
+                <li><strong>Right to data portability:</strong> receive your data in a portable format</li>
+                <li><strong>Right to object:</strong> object to processing based on legitimate interests</li>
+                <li><strong>Rights related to automated decision-making:</strong> request human review of automated decisions</li>
+            </ul>
+            <p>To exercise these rights, contact us at <strong>[YOUR EMAIL]</strong>. You also have the right to lodge a complaint with your local data protection authority.</p>
+        </section>
+
+        <!-- Section 11 -->
+        <section id="section-11">
+            <h2>11. Apple App Store Specific Disclosures</h2>
+            <p>
+                In accordance with Apple's App Store Review Guidelines, we disclose the following: The App collects data including device identifiers, usage data, and health information (when applicable). This data is linked to user identity through your account. We use data minimization practices and collect only what is necessary for core functionality. Your data is not shared with third parties for advertising, marketing, or data mining, except when necessary for service delivery (e.g., Garmin integration). You can request deletion of your account and data at any time.
+            </p>
+        </section>
+
+        <!-- Section 12 -->
+        <section id="section-12">
+            <h2>12. Garmin Integration and Data Transfer</h2>
+            <p>
+                Our App integrates with Garmin Connect through Garmin's official APIs. When you authorize our App to access your Garmin account, the following applies:
+            </p>
+
+            <h3>12.1 Data Access and Transfer</h3>
+            <ul>
+                <li>You grant us express authorization to access your Garmin Connect account and retrieve activity and health data</li>
+                <li>Your data is retrieved directly from Garmin's servers when you sync, or through Garmin's push notifications to our servers</li>
+                <li>We store a local copy of your synced data on our servers to provide features like historical analysis, trends, and insights</li>
+                <li>Data transfers between your device, Garmin's servers, and our servers are encrypted using industry-standard SSL/TLS protocols</li>
+            </ul>
+
+            <h3>12.2 Data Use Restrictions</h3>
+            <ul>
+                <li>We do not resell your Garmin data to third parties for commercial purposes</li>
+                <li>We do not use your health or activity data for targeted advertising</li>
+                <li>We do not share your data with data brokers or marketing networks</li>
+                <li>We do not train commercial AI models on your personal health data without explicit consent</li>
+            </ul>
+
+            <h3>12.3 Revoking Access</h3>
+            <p>
+                You can disconnect your Garmin account from our App at any time through:
+            </p>
+            <ul>
+                <li>Our App settings: Go to Settings → Connected Accounts → Disconnect Garmin</li>
+                <li>Garmin Connect: Revoke access by removing our App from your Garmin account's authorized applications</li>
+            </ul>
+            <p>
+                When you disconnect, we will stop retrieving new data from Garmin. However, previously synchronized data will remain in your App account unless you request deletion.
+            </p>
+
+            <h3>12.4 Garmin's Privacy</h3>
+            <p>
+                For information about how Garmin handles your data, please review <a href="https://www.garmin.com/privacy/connect" target="_blank">Garmin's Privacy Policy</a>. We comply with Garmin's Developer Program Agreement and data protection requirements. By connecting your Garmin account, you acknowledge that you have reviewed Garmin's privacy practices and consent to our use of the data in accordance with this Policy.
+            </p>
+        </section>
+
+        <!-- Section 13 -->
+        <section id="section-13">
+            <h2>13. Do Not Track</h2>
+            <p>
+                Some browsers and devices allow you to send "Do Not Track" signals. Our App does not currently respond to such signals, but you can disable tracking features through App settings or your device settings.
+            </p>
+        </section>
+
+        <!-- Section 14 -->
+        <section id="section-14">
+            <h2>14. Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last Updated" date and, if applicable, by sending you an email or displaying a notification in the App. Your continued use of the App constitutes acceptance of the updated Policy.
+            </p>
+        </section>
+
+        <!-- Section 16 - NUEVA -->
+        <section id="section-16">
+            <h2>16. Activity Analysis and Performance Insights</h2>
+            <p>
+                Our App analyzes your activity and health data to provide you with personalized insights and recommendations. This includes:
+            </p>
+            <ul>
+                <li><strong>Performance metrics:</strong> We calculate your fitness level, training load, recovery status, and performance trends</li>
+                <li><strong>Activity comparisons:</strong> We may compare your efforts on common routes or activities to help you track improvements</li>
+                <li><strong>Health patterns:</strong> We analyze patterns in your sleep, stress, and recovery data to provide recommendations</li>
+                <li><strong>Predictive analytics:</strong> We may use machine learning to predict your future performance or potential overtraining</li>
+            </ul>
+            <p>
+                All of this analysis is performed exclusively for your benefit and to improve your App experience. We do not use individual data for these analyses to create public leaderboards, compare you against other users without consent, or share your insights with third parties.
+            </p>
+        </section>
+
+        <!-- Section 17 - Community and Public Sharing (NEW) -->
+        <section id="section-17">
+            <h2>17. Community Features and Public Sharing</h2>
+            <p>
+                If our App includes social or community features, your participation is optional and subject to your privacy settings:
+            </p>
+            <ul>
+                <li><strong>Public activities:</strong> You choose which activities to make public. Private activities are only visible to you.</li>
+                <li><strong>Following and friends:</strong> You control who can follow your profile and see your activity feed</li>
+                <li><strong>Leaderboards and competitions:</strong> Any participation requires your explicit consent</li>
+                <li><strong>Sharing on social media:</strong> We do not automatically share your activities. Any sharing to social media is done by you, not by us.</li>
+            </ul>
+        </section>
+            <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
+            <div class="contact-box">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-value"><strong>[YOUR EMAIL ADDRESS]</strong></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Company:</span>
+                    <span class="contact-value">[YOUR COMPANY NAME]</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Address:</span>
+                    <span class="contact-value">[YOUR ADDRESS]</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Data Protection Officer:</span>
+                    <span class="contact-value">[DPO EMAIL] (if applicable)</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <strong>[YOUR COMPANY NAME]</strong>. All rights reserved.</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">This Privacy Policy is compliant with Apple App Store, Garmin Connect API, GDPR, and CCPA requirements.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTopBtn" title="Back to top">↑</button>
+
+    <script>
+        // Back to Top functionality
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
