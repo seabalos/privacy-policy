@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms of Service for Vyzva">
+    <title>Terms of Service - Vyzva</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1f4e78;
+            --secondary-color: #2e75b6;
+            --accent-color: #4472c4;
+            --text-dark: #1a1a1a;
+            --text-light: #4a4a4a;
+            --bg-light: #f8f9fa;
+            --border-color: #e0e0e0;
+            --warning-bg: #fff3cd;
+            --warning-text: #856404;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .last-updated {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .important-notice {
+            background-color: var(--warning-bg);
+            border-left: 4px solid #ff9800;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+            color: var(--warning-text);
+        }
+
+        .important-notice strong {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro {
+            background-color: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--secondary-color);
+            line-height: 1.8;
+        }
+
+        .toc {
+            background-color: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin: 0.5rem 0;
+        }
+
+        .toc a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin: 1.5rem 0 0.8rem 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 0.7rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        li strong {
+            color: var(--text-dark);
+        }
+
+        .highlight-box {
+            background-color: #f0f7ff;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .contact-box {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .contact-item {
+            margin: 1rem 0;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            display: inline-block;
+            min-width: 140px;
+        }
+
+        .contact-value {
+            color: var(--text-light);
+        }
+
+        footer {
+            background-color: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 1.5rem 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            .contact-label {
+                display: block;
+                min-width: auto;
+                margin-bottom: 0.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last Updated: April 2025</p>
+    </header>
+
+    <div class="container">
+        <div class="important-notice">
+            <strong>⚠️ Important:</strong>
+            By using Vyzva, you agree to these Terms of Service. If you do not agree with any part of these terms, you may not use the App. Please read these terms carefully before proceeding.
+        </div>
+
+        <div class="intro">
+            <p>
+                These Terms of Service ("Terms") establish the legal agreement between you and Vyzva ("we," "us," "our," or "Company") regarding your use of the Vyzva mobile application and related services (collectively, the "App").
+            </p>
+            <p>
+                <strong>Your use of Vyzva signifies your acceptance of these Terms.</strong> If you do not accept these Terms, please do not use the App.
+            </p>
+        </div>
+
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-1">1. Acceptance of Terms</a></li>
+                <li><a href="#section-2">2. License Grant and Restrictions</a></li>
+                <li><a href="#section-3">3. Your Account and Responsibilities</a></li>
+                <li><a href="#section-4">4. Third-Party Integrations</a></li>
+                <li><a href="#section-5">5. Intellectual Property Rights</a></li>
+                <li><a href="#section-6">6. User Content</a></li>
+                <li><a href="#section-7">7. Limitation of Liability</a></li>
+                <li><a href="#section-8">8. Disclaimer of Warranties</a></li>
+                <li><a href="#section-9">9. Indemnification</a></li>
+                <li><a href="#section-10">10. Privacy and Data Protection</a></li>
+                <li><a href="#section-11">11. Termination</a></li>
+                <li><a href="#section-12">12. Changes to Terms and Services</a></li>
+                <li><a href="#section-13">13. Governing Law and Jurisdiction</a></li>
+                <li><a href="#section-14">14. Contact Information</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 1 -->
+        <section id="section-1">
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+                By downloading, accessing, or using Vyzva, you agree to be bound by these Terms of Service and our Privacy Policy. If you are using Vyzva on behalf of an organization, you represent and warrant that you have the authority to bind that organization to these Terms.
+            </p>
+            <p>
+                If you do not agree to these Terms, you may not access or use the App. Your continued use of the App following any changes to these Terms constitutes your acceptance of the revised Terms.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="section-2">
+            <h2>2. License Grant and Restrictions</h2>
+            
+            <h3>2.1 License Grant</h3>
+            <p>
+                Vyzva grants you a limited, non-exclusive, non-transferable license to use the App solely for your personal, non-commercial purposes. This license does not authorize you to:
+            </p>
+            <ul>
+                <li>Modify, translate, adapt, or create derivative works based on the App</li>
+                <li>Copy, distribute, transmit, display, perform, or otherwise use the App for any commercial or public purpose</li>
+                <li>Reverse engineer, decompile, disassemble, or attempt to discover the source code or trade secrets of the App</li>
+                <li>Sell, transfer, assign, lease, rent, or sublicense the App</li>
+                <li>Remove, obscure, or alter any proprietary notices, labels, or marks on the App</li>
+                <li>Use the App in any manner that violates applicable laws or regulations</li>
+            </ul>
+
+            <h3>2.2 Account Creation</h3>
+            <p>
+                To use certain features of Vyzva, you may be required to create an account. You agree to:
+            </p>
+            <ul>
+                <li>Provide accurate, complete, and current information</li>
+                <li>Maintain the confidentiality of your password and account information</li>
+                <li>Accept responsibility for all activities that occur under your account</li>
+                <li>Notify us immediately of any unauthorized use of your account</li>
+            </ul>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="section-3">
+            <h2>3. Your Account and Responsibilities</h2>
+            
+            <h3>3.1 User Conduct</h3>
+            <p>
+                You agree not to use the App to:
+            </p>
+            <ul>
+                <li>Harass, threaten, abuse, or intimidate any person</li>
+                <li>Engage in any illegal, fraudulent, or deceptive activity</li>
+                <li>Upload, post, or transmit malware, viruses, or harmful code</li>
+                <li>Interfere with or disrupt the integrity of the App or its servers</li>
+                <li>Spam, send unsolicited messages, or engage in any form of harassment</li>
+                <li>Infringe on any intellectual property rights of others</li>
+                <li>Violate any applicable laws, regulations, or third-party rights</li>
+            </ul>
+
+            <h3>3.2 Compliance with Laws</h3>
+            <p>
+                You agree to comply with all applicable federal, state, local, and international laws, statutes, ordinances, and regulations in your use of the App.
+            </p>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="section-4">
+            <h2>4. Third-Party Integrations</h2>
+            
+            <h3>4.1 Integration with External Services</h3>
+            <p>
+                Vyzva may integrate with third-party health and fitness platforms (such as Garmin, Apple Health, Whoop, and others). When you authorize these integrations:
+            </p>
+            <ul>
+                <li>You grant Vyzva permission to access your data from those services</li>
+                <li>Your data will be transferred to our servers and processed according to our Privacy Policy and the third-party service's policies</li>
+                <li>You are responsible for reviewing and understanding the third-party service's terms and privacy policies</li>
+                <li>You can disconnect any integration at any time through the App settings</li>
+            </ul>
+
+            <h3>4.2 Third-Party Service Changes</h3>
+            <p>
+                Vyzva is not responsible for:
+            </p>
+            <ul>
+                <li>Changes made by third-party services to their APIs or terms</li>
+                <li>Interruptions or discontinuation of third-party services</li>
+                <li>Loss of access to your data due to third-party service changes</li>
+                <li>Changes in data formats or availability from third-party services</li>
+            </ul>
+
+            <h3>4.3 Garmin Integration Disclaimer</h3>
+            <p>
+                Garmin is an independent third party. <strong>Garmin is not responsible for Vyzva's operation, security, or data handling practices.</strong> Your use of Garmin integration is subject to both Vyzva's Terms and Garmin's terms. For information about Garmin's practices, visit <a href="https://www.garmin.com/privacy/connect" target="_blank">https://www.garmin.com/privacy/connect</a>.
+            </p>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="section-5">
+            <h2>5. Intellectual Property Rights</h2>
+            
+            <h3>5.1 Vyzva's Intellectual Property</h3>
+            <p>
+                The App, including all content, features, functionality, and design, is owned by Vyzva or its licensors and is protected by copyright, trademark, and other intellectual property laws. You acknowledge and agree that:
+            </p>
+            <ul>
+                <li>All content and materials in the App are protected by copyright</li>
+                <li>You do not acquire any ownership rights to any content or intellectual property by using the App</li>
+                <li>Any unauthorized use of Vyzva's intellectual property is prohibited</li>
+            </ul>
+
+            <h3>5.2 Your License to Use Vyzva Content</h3>
+            <p>
+                Subject to these Terms, Vyzva grants you a limited license to access and use the App for your personal, non-commercial use only.
+            </p>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="section-6">
+            <h2>6. User Content</h2>
+            
+            <h3>6.1 Your Responsibility</h3>
+            <p>
+                You are solely responsible for any content you submit, upload, or transmit through the App ("User Content"). By submitting User Content, you represent and warrant that:
+            </p>
+            <ul>
+                <li>You own or have the necessary rights to the User Content</li>
+                <li>The User Content does not violate any laws or infringe on any third-party rights</li>
+                <li>The User Content does not contain malware, viruses, or harmful code</li>
+            </ul>
+
+            <h3>6.2 License to Your Content</h3>
+            <p>
+                By submitting User Content to Vyzva, you grant Vyzva a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, and display your User Content for the purposes of providing and improving the App. You retain all rights to your User Content and can delete it at any time.
+            </p>
+
+            <h3>6.3 Removal of Content</h3>
+            <p>
+                Vyzva reserves the right to remove any User Content that violates these Terms or is otherwise inappropriate, without prior notice and without liability.
+            </p>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="section-7">
+            <h2>7. Limitation of Liability</h2>
+            
+            <div class="highlight-box">
+                <strong>IMPORTANT - Please read this section carefully.</strong>
+            </div>
+
+            <h3>7.1 Limitation of Damages</h3>
+            <p>
+                TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL VYZVA BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM OR RELATING TO YOUR USE OF THE APP, EVEN IF VYZVA HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+            </p>
+
+            <h3>7.2 Cap on Liability</h3>
+            <p>
+                TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, VYZVA'S TOTAL LIABILITY FOR ALL CLAIMS ARISING FROM OR RELATING TO THESE TERMS OR YOUR USE OF THE APP SHALL NOT EXCEED $100 (USD) OR THE AMOUNT YOU PAID FOR THE APP, WHICHEVER IS LESS.
+            </p>
+
+            <h3>7.3 No Liability for Third-Party Services</h3>
+            <p>
+                <strong>VYZVA IS NOT RESPONSIBLE FOR THE OPERATION, SECURITY, OR DATA HANDLING OF THIRD-PARTY SERVICES</strong> (such as Garmin, Apple, or Whoop). Vyzva shall have no liability for:
+            </p>
+            <ul>
+                <li>Loss of data due to third-party service failures</li>
+                <li>Changes in third-party service terms or APIs</li>
+                <li>Unavailability or discontinuation of third-party services</li>
+                <li>Security breaches in third-party services</li>
+                <li>Loss of access to your data due to third-party changes</li>
+            </ul>
+
+            <h3>7.4 Exceptions</h3>
+            <p>
+                Some jurisdictions do not allow the exclusion or limitation of certain damages. If applicable law prohibits the above limitation, Vyzva's liability shall be limited to the greatest extent permitted by law.
+            </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="section-8">
+            <h2>8. Disclaimer of Warranties</h2>
+            
+            <div class="highlight-box">
+                <strong>IMPORTANT - Vyzva is provided "as-is"</strong>
+            </div>
+
+            <h3>8.1 "As-Is" Disclaimer</h3>
+            <p>
+                THE APP IS PROVIDED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS. VYZVA MAKES NO WARRANTIES, EXPRESS OR IMPLIED, REGARDING THE APP, INCLUDING:
+            </p>
+            <ul>
+                <li>Any warranty of merchantability or fitness for a particular purpose</li>
+                <li>Any warranty of non-infringement of third-party rights</li>
+                <li>Any warranty regarding the accuracy, completeness, or timeliness of content</li>
+                <li>Any warranty regarding the security or privacy of your data</li>
+            </ul>
+
+            <h3>8.2 Service Continuity</h3>
+            <p>
+                Vyzva does not warrant that:
+            </p>
+            <ul>
+                <li>The App will operate without interruption or error</li>
+                <li>All defects will be corrected</li>
+                <li>The App will meet your specific requirements</li>
+                <li>Any third-party services will remain available</li>
+            </ul>
+
+            <h3>8.3 No Support or Maintenance</h3>
+            <p>
+                While Vyzva endeavors to provide customer support, it is not obligated to provide updates, maintenance, or technical support for the App.
+            </p>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="section-9">
+            <h2>9. Indemnification</h2>
+            <p>
+                You agree to indemnify, defend, and hold harmless Vyzva and its officers, directors, employees, and agents from any claims, damages, losses, or expenses (including attorneys' fees) arising from or relating to:
+            </p>
+            <ul>
+                <li>Your use of the App in violation of these Terms</li>
+                <li>Your violation of applicable laws or regulations</li>
+                <li>Your infringement of any third-party rights</li>
+                <li>Your User Content</li>
+                <li>Your use of third-party services through the App</li>
+            </ul>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="section-10">
+            <h2>10. Privacy and Data Protection</h2>
+            
+            <h3>10.1 Privacy Policy</h3>
+            <p>
+                Your use of Vyzva is also governed by our Privacy Policy, which is incorporated into these Terms by reference. Please review our Privacy Policy at:
+            </p>
+            <p>
+                <a href="https://seabalos.github.io/privacy-policy/" target="_blank">https://seabalos.github.io/privacy-policy/</a>
+            </p>
+
+            <h3>10.2 Data Handling</h3>
+            <p>
+                By using Vyzva and authorizing third-party integrations, you acknowledge that:
+            </p>
+            <ul>
+                <li>Your data will be stored on Vyzva's servers</li>
+                <li>Your data may be transferred to third-party services according to your authorization</li>
+                <li>Your data is subject to both Vyzva's Privacy Policy and applicable laws</li>
+                <li>You can delete your account and data at any time</li>
+            </ul>
+
+            <h3>10.3 Third-Party Privacy</h3>
+            <p>
+                You are responsible for reviewing the privacy policies of any third-party services you authorize integration with. <strong>Vyzva is not responsible for third-party data handling practices.</strong>
+            </p>
+        </section>
+
+        <!-- Section 11 -->
+        <section id="section-11">
+            <h2>11. Termination</h2>
+            
+            <h3>11.1 Termination by You</h3>
+            <p>
+                You can delete your Vyzva account and cease using the App at any time. To delete your account, follow the instructions in the App or contact us at sabalos@g.ucla.edu.
+            </p>
+
+            <h3>11.2 Termination by Vyzva</h3>
+            <p>
+                Vyzva may suspend or terminate your account and access to the App if:
+            </p>
+            <ul>
+                <li>You violate these Terms</li>
+                <li>You violate applicable laws</li>
+                <li>You engage in conduct harmful to Vyzva or other users</li>
+                <li>You fail to pay any fees associated with the App (if applicable)</li>
+            </ul>
+
+            <h3>11.3 Effect of Termination</h3>
+            <p>
+                Upon termination, your right to use the App ceases immediately. Your data will be deleted according to our Privacy Policy. Sections that survive termination include Limitation of Liability, Disclaimer of Warranties, Indemnification, and Governing Law.
+            </p>
+        </section>
+
+        <!-- Section 12 -->
+        <section id="section-12">
+            <h2>12. Changes to Terms and Services</h2>
+            
+            <h3>12.1 Changes to Terms</h3>
+            <p>
+                Vyzva may modify these Terms at any time. Changes will be effective upon posting to the App or our website. Your continued use of the App following any changes constitutes your acceptance of the revised Terms. It is your responsibility to review these Terms periodically for changes.
+            </p>
+
+            <h3>12.2 Changes to Services</h3>
+            <p>
+                Vyzva may modify, suspend, or discontinue the App or any features of the App at any time, with or without notice. Vyzva shall not be liable for any loss resulting from such changes.
+            </p>
+
+            <h3>12.3 API Changes</h3>
+            <p>
+                Third-party services may change their APIs, terms, or services. Vyzva is not responsible for accommodating such changes or maintaining compatibility.
+            </p>
+        </section>
+
+        <!-- Section 13 -->
+        <section id="section-13">
+            <h2>13. Governing Law and Jurisdiction</h2>
+            
+            <h3>13.1 Governing Law</h3>
+            <p>
+                These Terms shall be governed by and construed in accordance with the laws of the State of California, USA, without regard to its conflict of law principles.
+            </p>
+
+            <h3>13.2 Jurisdiction and Venue</h3>
+            <p>
+                You agree that any legal action or proceeding arising from or relating to these Terms shall be brought exclusively in the state or federal courts located in Los Angeles County, California. You consent to the personal jurisdiction of these courts.
+            </p>
+
+            <h3>13.3 Dispute Resolution</h3>
+            <p>
+                Before initiating formal legal proceedings, we encourage you to contact us to resolve any disputes informally.
+            </p>
+        </section>
+
+        <!-- Section 14 -->
+        <section id="section-14">
+            <h2>14. Contact Information</h2>
+            <p>
+                If you have questions about these Terms of Service, please contact us:
+            </p>
+
+            <div class="contact-box">
+                <h3>Vyzva Contact Information</h3>
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-value"><strong>sabalos@g.ucla.edu</strong></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Company:</span>
+                    <span class="contact-value">Vyzva</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Address:</span>
+                    <span class="contact-value">405 Hilgard Ave, Los Angeles, CA 90095, USA</span>
+                </div>
+            </div>
+
+            <p style="margin-top: 2rem;">
+                We will respond to inquiries within 30 days.
+            </p>
+        </section>
+
+        <div style="background-color: var(--bg-light); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
+            <strong>Agreement:</strong>
+            <p style="margin-top: 1rem;">
+                By using Vyzva, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree with any part of these terms, you should not use the App.
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vyzva. All rights reserved.</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">
+            This Terms of Service is designed to comply with applicable laws and protects both Vyzva and our users.
+        </p>
+    </footer>
+
+    <button class="back-to-top" id="backToTopBtn" title="Back to top">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
