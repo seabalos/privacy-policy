@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy">
+    <title>Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1f4e78;
+            --secondary-color: #2e75b6;
+            --accent-color: #4472c4;
+            --text-dark: #1a1a1a;
+            --text-light: #4a4a4a;
+            --bg-light: #f8f9fa;
+            --border-color: #e0e0e0;
+            --warning-bg: #fff3cd;
+            --warning-text: #856404;
+            --success-bg: #f0f7ff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .last-updated {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .important-notice {
+            background-color: var(--warning-bg);
+            border-left: 4px solid #ff9800;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+            color: var(--warning-text);
+        }
+
+        .important-notice strong {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro {
+            background-color: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--secondary-color);
+            line-height: 1.8;
+        }
+
+        .toc {
+            background-color: var(--bg-light);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+        }
+
+        .toc h2 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .toc ul {
+            list-style: none;
+        }
+
+        .toc li {
+            margin: 0.5rem 0;
+        }
+
+        .toc a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary-color);
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+            margin: 1.5rem 0 0.8rem 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        ul {
+            margin: 1rem 0 1rem 2rem;
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 0.7rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        li strong {
+            color: var(--text-dark);
+        }
+
+        .highlight-box {
+            background-color: var(--success-bg);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+
+        .contact-box {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .contact-item {
+            margin: 1rem 0;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .contact-item:last-child {
+            border-bottom: none;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            display: inline-block;
+            min-width: 140px;
+        }
+
+        .contact-value {
+            color: var(--text-light);
+        }
+
+        footer {
+            background-color: var(--bg-light);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-to-top.show {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 1.5rem 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            .contact-label {
+                display: block;
+                min-width: auto;
+                margin-bottom: 0.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last Updated: April 2025</p>
+    </header>
+
+    <div class="container">
+        <div class="important-notice">
+            <strong>⚠️ Important Notice:</strong>
+            This app may integrate with third-party health and fitness platforms. By using these integrations, you acknowledge that your data will be transferred to those platforms' servers and processed according to both this Privacy Policy and the third-party's privacy policy.
+        </div>
+
+        <div class="intro">
+            <p>
+                This Privacy Policy explains how Vyzva ("we," "us," "our," or "App") collects, uses, discloses, and processes your personal information. This Policy applies to all users of the App, whether accessed through any app store or through third-party integrations.
+            </p>
+            <p>
+                <strong>Your privacy is important to us.</strong> We are committed to being transparent about how we collect, use, and protect your information, and we respect your control over your data.
+            </p>
+        </div>
+
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-1">1. Information We Collect</a></li>
+                <li><a href="#section-2">2. How We Use Your Information</a></li>
+                <li><a href="#section-3">3. Third-Party Integrations and APIs</a></li>
+                <li><a href="#section-4">4. Data Sharing and Third Parties</a></li>
+                <li><a href="#section-5">5. Data Retention and Deletion</a></li>
+                <li><a href="#section-6">6. Your Privacy Rights and Choices</a></li>
+                <li><a href="#section-7">7. Data Security</a></li>
+                <li><a href="#section-8">8. Children's Privacy</a></li>
+                <li><a href="#section-9">9. California Privacy Rights (CCPA/CPRA)</a></li>
+                <li><a href="#section-10">10. EU/GDPR Rights</a></li>
+                <li><a href="#section-11">11. Changes to This Privacy Policy</a></li>
+                <li><a href="#section-12">12. Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 1 -->
+        <section id="section-1">
+            <h2>1. Information We Collect</h2>
+
+            <h3>1.1 Information You Provide Directly</h3>
+            <ul>
+                <li><strong>Account Information:</strong> Name, email address, password (encrypted), phone number (optional)</li>
+                <li><strong>Profile Information:</strong> Age, gender, fitness goals, experience level, preferred activities</li>
+                <li><strong>Payment Information:</strong> Processed through secure third-party payment processors. We do not store full credit card information.</li>
+            </ul>
+
+            <h3>1.2 Health and Fitness Data from Third-Party Services</h3>
+            <p>
+                When you authorize our App to access third-party health and fitness services, we collect data you have chosen to share, which may include:
+            </p>
+            <ul>
+                <li><strong>Activity Data:</strong> Physical activities, duration, distance, calories, intensity levels</li>
+                <li><strong>Health Metrics:</strong> Heart rate data, sleep information, stress measurements, body composition metrics</li>
+                <li><strong>Performance Data:</strong> Speed, pace, power output, cadence, elevation, fitness assessments, personal records</li>
+                <li><strong>Training Data:</strong> Workouts, training plans, fitness trends, recovery information, training load</li>
+                <li><strong>Location Data:</strong> GPS coordinates and route information from activities (only when enabled)</li>
+                <li><strong>Device Information:</strong> Type of health or fitness device, device name, software version</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Important:</strong> We do <strong>NOT</strong> sell, trade, or use your health and fitness data for advertising, marketing, or any purpose unrelated to improving your experience with our App. We do not share this data with third parties for commercial purposes without your explicit consent.
+            </div>
+
+            <h3>1.3 Automatically Collected Information</h3>
+            <ul>
+                <li><strong>Device Information:</strong> Device type, operating system, unique device identifier</li>
+                <li><strong>Usage Data:</strong> Features accessed, app interactions, crash logs, performance metrics</li>
+                <li><strong>Analytics:</strong> How you interact with the App (usage patterns, feature adoption)</li>
+                <li><strong>Network Information:</strong> IP address, connection type</li>
+            </ul>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="section-2">
+            <h2>2. How We Use Your Information</h2>
+            <ul>
+                <li>To provide, maintain, and improve the App and its services</li>
+                <li>To enable third-party integrations and data synchronization</li>
+                <li>To analyze your fitness performance, generate insights, and track progress</li>
+                <li>To provide personalized recommendations and training suggestions</li>
+                <li>To create competitive and community features</li>
+                <li>To respond to your inquiries and provide customer support</li>
+                <li>To send service announcements and updates</li>
+                <li>To detect fraud, prevent abuse, and protect the App's security</li>
+                <li>To comply with legal obligations and enforce our Terms of Service</li>
+                <li>For analytics and research (using de-identified or aggregated data)</li>
+            </ul>
+        </section>
+
+        <!-- Section 3: Third-Party Integrations -->
+        <section id="section-3">
+            <h2>3. Third-Party Integrations and APIs</h2>
+
+            <h3>3.1 How Third-Party Integrations Work</h3>
+            <p>
+                Our App may support integration with external health and fitness platforms through their official APIs and services. When you connect any third-party service to our App, you are authorizing us to:
+            </p>
+            <ul>
+                <li>Request access to your data stored on that third-party service</li>
+                <li>Retrieve and store that data on our servers</li>
+                <li>Process and display that data within our App</li>
+                <li>Perform analysis and generate insights based on that data</li>
+            </ul>
+
+            <h3>3.2 Your Consent and Authorization</h3>
+            <p>
+                <strong>By connecting any third-party service to our App, you:</strong>
+            </p>
+            <ul>
+                <li>Grant us express permission to access your data from that service</li>
+                <li>Acknowledge that your data will be transferred from the third-party's servers to our servers</li>
+                <li>Understand that both this Privacy Policy AND the third-party service's privacy policy apply to your data</li>
+                <li>Confirm you have the authority to grant this consent (or have parental consent if under 18)</li>
+                <li>Acknowledge that you have read and understood the third-party service's privacy policy</li>
+            </ul>
+
+            <h3>3.3 Data Transfer and Security</h3>
+            <p>
+                All data transfers between third-party services and our App are encrypted using industry-standard protocols (SSL/TLS). We do not share your credentials (passwords, API keys) with any other services. Each third-party service remains responsible for the security of their data on their servers, and we are responsible for the security of data on our servers.
+            </p>
+
+            <h3>3.4 Disconnecting Integrations</h3>
+            <p>
+                You can disconnect any third-party integration at any time through:
+            </p>
+            <ul>
+                <li><strong>Within Our App:</strong> Settings → Connected Accounts → Select service → Disconnect</li>
+                <li><strong>Through the Third-Party Service:</strong> Revoke authorization in your account privacy/security settings</li>
+            </ul>
+            <p>
+                After disconnection, we will stop retrieving new data from that service. Data previously synchronized will remain in your App account unless you request deletion. The third-party service retains their own copy of your data according to their retention policies.
+            </p>
+
+            <h3>3.5 Third-Party Privacy Policies</h3>
+            <p>
+                Each third-party service is independently responsible for how they process and protect your data. We are not responsible for third-party privacy practices. You should review each service's privacy policy before authorizing integration with our App.
+            </p>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="section-4">
+            <h2>4. Data Sharing and Third Parties</h2>
+
+            <h3>4.1 Service Providers</h3>
+            <p>
+                We may share information with third-party service providers who help us:
+            </p>
+            <ul>
+                <li>Host our servers and store data</li>
+                <li>Process payments</li>
+                <li>Provide analytics and reporting</li>
+                <li>Deliver email communications</li>
+                <li>Monitor app performance and security</li>
+            </ul>
+            <p>
+                All service providers are contractually bound to protect your data and use it only for specified purposes.
+            </p>
+
+            <h3>4.2 Third-Party Services and Integrations</h3>
+            <p>
+                When you authorize integration with a third-party service, you are directly sharing your authorization with that service. Data flows according to your settings on that service. We do not sell, rent, or lease your data to third-party services. Data sharing only occurs through services you have explicitly authorized.
+            </p>
+
+            <h3>4.3 Legal Requirements</h3>
+            <p>
+                We may disclose your information if required by law, court order, or government request. We will attempt to notify you of such requests when legally permissible.
+            </p>
+
+            <h3>4.4 Business Transfers</h3>
+            <p>
+                In the event of a merger, acquisition, bankruptcy, or sale of assets, your information may be transferred as part of that transaction.
+            </p>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="section-5">
+            <h2>5. Data Retention and Deletion</h2>
+
+            <h3>5.1 Data Retention Periods</h3>
+            <ul>
+                <li><strong>Account Information:</strong> Retained while your account is active. Deleted within 30 days of account deletion.</li>
+                <li><strong>Activity and Health Data:</strong> Retained while your account is active. If you disconnect a third-party integration, previously synced data remains unless you request deletion.</li>
+                <li><strong>Backup and System Logs:</strong> May be retained for up to 60 days after deletion for backup and security purposes.</li>
+                <li><strong>Analytics Data:</strong> De-identified and aggregated data is retained indefinitely to improve the App.</li>
+            </ul>
+
+            <h3>5.2 Account Deletion</h3>
+            <p>
+                You can request deletion of your account and associated personal data by contacting us. We will delete or anonymize your personal information within 30 days.
+            </p>
+
+            <h3>5.3 Important Notes on Deletion</h3>
+            <ul>
+                <li>Public data you shared may remain visible on our App</li>
+                <li>Third-party services have their own data retention and deletion policies; contact them directly to delete data from their services</li>
+                <li>Backup copies may persist for up to 60 days for security purposes</li>
+            </ul>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="section-6">
+            <h2>6. Your Privacy Rights and Choices</h2>
+
+            <h3>6.1 Access Your Data</h3>
+            <p>
+                You can access and download a copy of your data through your account settings or by contacting us.
+            </p>
+
+            <h3>6.2 Correct Inaccurate Data</h3>
+            <p>
+                You can update your profile information and account settings at any time through the App.
+            </p>
+
+            <h3>6.3 Delete Your Data</h3>
+            <p>
+                You can request deletion of your account and associated data by contacting us with the subject "Account Deletion Request."
+            </p>
+
+            <h3>6.4 Control Third-Party Integrations</h3>
+            <p>
+                You can enable or disable any third-party integration through the App's settings at any time without affecting your ability to use other App features.
+            </p>
+
+            <h3>6.5 Opt-Out of Marketing Communications</h3>
+            <p>
+                You can opt out of promotional emails by clicking "unsubscribe" in any marketing email or adjusting notification preferences in the App.
+            </p>
+
+            <h3>6.6 Location Services</h3>
+            <p>
+                You can control location permissions through your device settings. We collect precise location data only when you have explicitly enabled it.
+            </p>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="section-7">
+            <h2>7. Data Security</h2>
+            <p>
+                We implement industry-standard security measures to protect your information:
+            </p>
+            <ul>
+                <li><strong>Encryption in Transit:</strong> All data transfers use SSL/TLS encryption protocols</li>
+                <li><strong>Encryption at Rest:</strong> Sensitive data is encrypted when stored on our servers</li>
+                <li><strong>Access Controls:</strong> Only authorized personnel have access to personal data</li>
+                <li><strong>Regular Audits:</strong> We conduct regular security assessments and updates</li>
+                <li><strong>Password Protection:</strong> We hash and salt passwords using industry-standard algorithms</li>
+            </ul>
+            <p>
+                However, no system is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.
+            </p>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="section-8">
+            <h2>8. Children's Privacy</h2>
+            <p>
+                Our App is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.
+            </p>
+            <p>
+                If we become aware that a child under 13 has provided us with personal information, we will delete such information promptly.
+            </p>
+            <p>
+                <strong>For Users Ages 13-18:</strong> We provide additional privacy protections for younger users, including restricted features and parental consent requirements where applicable.
+            </p>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="section-9">
+            <h2>9. California Privacy Rights (CCPA/CPRA)</h2>
+            <p>
+                If you are a California resident, you have the following rights:
+            </p>
+            <ul>
+                <li><strong>Right to Know:</strong> Request what personal information we collect</li>
+                <li><strong>Right to Delete:</strong> Request deletion of your personal information</li>
+                <li><strong>Right to Opt-Out:</strong> Opt out of the sale or sharing of your personal information (we do not sell your data)</li>
+                <li><strong>Right to Correct:</strong> Request correction of inaccurate information</li>
+                <li><strong>Right to Non-Discrimination:</strong> We will not discriminate for exercising your rights</li>
+            </ul>
+            <p>
+                To exercise these rights, contact us at <strong>sabalos@g.ucla.edu</strong>. We will respond within 45 days.
+            </p>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="section-10">
+            <h2>10. EU/GDPR Rights</h2>
+            <p>
+                If you are located in the EU, EEA, United Kingdom, or Switzerland, you have the following rights under GDPR:
+            </p>
+            <ul>
+                <li><strong>Right of Access:</strong> Request access to your personal data</li>
+                <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete data</li>
+                <li><strong>Right to Erasure:</strong> Request deletion (right to be forgotten)</li>
+                <li><strong>Right to Restrict Processing:</strong> Limit how we use your data</li>
+                <li><strong>Right to Data Portability:</strong> Receive your data in a portable format</li>
+                <li><strong>Right to Object:</strong> Object to processing for direct marketing</li>
+            </ul>
+            <p>
+                To exercise these rights, contact us at <strong>sabalos@g.ucla.edu</strong> or our Data Protection Officer. You have the right to lodge a complaint with your local data protection authority.
+            </p>
+        </section>
+
+        <!-- Section 11 -->
+        <section id="section-11">
+            <h2>11. Changes to This Privacy Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will notify you of material changes by updating the "Last Updated" date, sending you an email notification, or displaying a notification within the App.
+            </p>
+            <p>
+                Your continued use of the App means you accept the updated Privacy Policy. If you do not agree with the changes, delete your account and stop using the App.
+            </p>
+        </section>
+
+        <!-- Section 12 -->
+        <section id="section-12">
+            <h2>12. Contact Us</h2>
+            <p>
+                If you have questions about this Privacy Policy or our privacy practices, please contact us:
+            </p>
+
+            <div class="contact-box">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-value"><strong>sabalos@g.ucla.edu</strong></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Company:</span>
+                    <span class="contact-value">Vyzva</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Address:</span>
+                    <span class="contact-value">405 Hilgard Ave, Los Angeles, CA 90095, USA</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Data Protection Officer:</span>
+                    <span class="contact-value">sabalos@g.ucla.edu (if applicable)</span>
+                </div>
+            </div>
+
+            <p style="margin-top: 2rem;">
+                We will respond to privacy requests within 30 days (or as required by applicable law).
+            </p>
+        </section>
+
+        <div class="highlight-box" style="margin-top: 3rem;">
+            <strong>Compliance Notice:</strong> This Privacy Policy is designed to comply with:
+            <ul style="margin-top: 1rem;">
+                <li>Apple App Store Review Guidelines and HealthKit Requirements</li>
+                <li>Third-party API provider agreements and requirements</li>
+                <li>GDPR (EU/EEA)</li>
+                <li>CCPA/CPRA (California)</li>
+                <li>General Data Protection Laws (International)</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vyzva. All rights reserved.</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem;">This Privacy Policy is compliant with app store guidelines, health data regulations, and international privacy standards.</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTopBtn" title="Back to top">↑</button>
+
+    <script>
+        const backToTopBtn = document.getElementById('backToTopBtn');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
